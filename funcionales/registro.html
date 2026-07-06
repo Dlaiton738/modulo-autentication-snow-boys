@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regístrate</title>
+<link rel="stylesheet" href="registro.css">
+</head>
+<body>
+
+<div class="card">
+  <div class="card-header">
+    <span class="title">Regístrate</span>
+    <a href="index.html" class="link-login">Iniciar Sesión</a>
+  </div>
+
+  <form id="form-registro" class="card-body" novalidate>
+    <div class="field">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" placeholder="Usuario">
+    </div>
+
+    <div class="field">
+      <label for="usuario">Usuario</label>
+      <input type="text" id="usuario" placeholder="usuario">
+    </div>
+
+    <div class="field">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Password">
+    </div>
+
+    <div class="field">
+      <label for="password2">Confirmar Password</label>
+      <input type="password" id="password2" placeholder="Confirmar Password">
+    </div>
+
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="usuario@hotmail.com">
+    </div>
+
+    <div class="field captcha-row">
+      <label class="captcha-check">
+        <input type="checkbox" id="captcha">
+        <span>No soy un robot.</span>
+      </label>
+      <div class="recaptcha-badge">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#4285F4" stroke-width="2">
+          <path d="M4 4v6h6M20 20v-6h-6"></path>
+          <path d="M4 10a8 8 0 0 1 14-4M20 14a8 8 0 0 1-14 4"></path>
+        </svg>
+        <div class="recaptcha-text">
+          <span>reCAPTCHA</span>
+          <small>Privacidad · Condiciones</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="field submit-row">
+      <button type="submit" class="btn-registrar">Registrar</button>
+    </div>
+  </form>
+
+  <div class="alert-error" id="alert-error" hidden>
+    <button class="alert-close" id="alert-close" aria-label="Cerrar">[X]</button>
+    <ul id="alert-list"></ul>
+  </div>
+</div>
+
+<script src="registro.js"></script>
+</body>
+</html>
